@@ -1,0 +1,260 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: none;
+   box-sizing: border-box;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   color: inherit;
+}
+
+a:link,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+   font-size: inherit;
+}
+
+button {
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+/*-----------------Шрифты-------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap');
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff");
+   font-display: swap;
+   font-weight: 300;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+
+/*------------------------------------------------*/
+body {
+   font-family: 'lato';
+   font-style: normal;
+   font-weight: 400;
+   background: url('../img/doroga.jpg') 0 0 / 100% no-repeat;
+}
+
+.wrapper {}
+
+.header {}
+
+.header__container {}
+
+.header__body {}
+
+.header__blue {}
+
+.header__yellow {}
+
+.main {}
+
+.main__container {}
+
+.main__body {}
+
+.main__car {}
+
+.car {}
+
+.car__body {
+   position: relative;
+   width: 1000px;
+   height: 1000px;
+}
+
+.car__back-case {
+   content: "";
+   background: url('../img/Body/back-case.png') 0 0 / 100% no-repeat;
+   width: 240px;
+   height: 240px;
+   position: absolute;
+   top: 680px;
+   left: 900px;
+}
+
+.car__back-wheel {
+   content: "";
+   background: url('../img/Body/back-wheel.png') 0 0 / 100% no-repeat;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 730px;
+   left: 960px;
+}
+
+.car__back-window {
+   content: "";
+   background: url('../img/Body/back-window.png') 0 0 / 100% no-repeat;
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 648px;
+   left: 885px;
+}
+
+.car__front-glasses {
+   content: "";
+   background: url('../img/Body/fron-glasses.png') 0 0 / 100% no-repeat;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 650px;
+   left: 710px;
+}
+
+.car__front-wheel {
+   content: "";
+   background: url('../img/Body/front-wheel.png') 0 0 / 100% no-repeat;
+   width: 90px;
+   height: 90px;
+   position: absolute;
+   top: 730px;
+   left: 625px;
+   z-index: 1;
+}
+
+.car__hood {
+   content: "";
+   background: url('../img/Body/hood.png') 0 0 / 100% no-repeat;
+   width: 180px;
+   height: 150px;
+   position: absolute;
+   top: 690px;
+   left: 575px;
+}
+
+.car__samara {
+   display: block;
+   content: "";
+   background: url('../img/Body/samara.png') 0 0 / 100% no-repeat;
+   width: 250px;
+   height: 250px;
+   position: absolute;
+   top: 410px;
+   left: 205px;
+}
+
+.car__spoiler {
+   content: "";
+   background: url('../img/Body/spoiler.png') 0 0 / 100% no-repeat;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 670px;
+   left: 1060px;
+}
+
+.car__threshold {
+   content: "";
+   background: url('../img/Body/threshold.png') 0 0 / 100% no-repeat;
+   width: 250px;
+   height: 250px;
+   position: absolute;
+   top: 775px;
+   left: 710px;
+   transition: all 0.7s ease-in 0s;
+}
+
+.car__roof {
+   content: "";
+   background: url('../img/Body/roof.png') 0 0 / 100% no-repeat;
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   top: 640px;
+   left: 740px;
+   z-index: -1;
+   transition: all 0.7s ease-in 0s;
+}
+
+.car__door {
+   content: "";
+   background: url('../img/Body/door.png') 0 0 / 100% no-repeat;
+   width: 180px;
+   height: 180px;
+   position: absolute;
+   top: 654px;
+   left: 737px;
+}
+
+.car__head {
+   content: "";
+   display: block;
+   background: url('../img/Body/valakas.png') 0 0 / 100% no-repeat;
+   width: 70px;
+   height: 70px;
+   position: absolute;
+   top: 690px;
+   left: 820px;
+   transition: all 0.5s ease-in 0s;
+   z-index: -1;
+}
+
+.title {
+   font-size: 40px;
+   background-color: rgb(240, 207, 207);
+   display: inline;
+}
+
+.car__samara:hover~.car__head {
+   top: 640px;
+   left: 820px;
+}
